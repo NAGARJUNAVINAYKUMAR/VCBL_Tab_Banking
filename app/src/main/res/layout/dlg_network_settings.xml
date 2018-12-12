@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/ten"
+    android:background="@drawable/dialog_design_style"
+    android:orientation="vertical"
+    android:padding="@dimen/twenty">
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/text_view_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/mac_address" />
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/et_mac_address"
+        style="@style/edit_text_style_square"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/two"
+        android:hint="@string/mac_address"
+        android:inputType="text" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_url"
+        style="@style/text_view_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/five"
+        android:text="@string/url" />
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/et_url"
+        style="@style/edit_text_style_square"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/two"
+        android:hint="@string/urlLink"
+        android:inputType="text" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_port"
+        style="@style/text_view_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/five"
+        android:text="@string/port" />
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/et_port"
+        style="@style/edit_text_style_square"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/two"
+        android:hint="@string/port"
+        android:inputType="number" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_app_name"
+        style="@style/text_view_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/five"
+        android:text="@string/app" />
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/et_app"
+        style="@style/edit_text_style_square"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/two"
+        android:hint="@string/app" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/ten"
+        android:layout_marginTop="@dimen/twenty"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <!--<android.support.v7.widget.AppCompatButton
+            style="@style/login_btn_style_square"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/four"
+            android:layout_marginRight="@dimen/four"
+            android:layout_weight="0.34"
+            android:text="@string/calculate"
+            android:textSize="@dimen/sixteen_sp"
+            android:visibility="invisible" />-->
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_clear_nw_settings"
+            style="@style/login_btn_style_square"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/two"
+            android:layout_marginRight="@dimen/two"
+            android:layout_weight="0.5"
+            android:padding="@dimen/ten"
+            android:text="@string/cancel" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_save_nw_settings"
+            style="@style/login_btn_style_square"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/two"
+            android:layout_marginStart="@dimen/two"
+            android:layout_weight="0.5"
+            android:padding="@dimen/ten"
+            android:text="@string/save" />
+
+    </LinearLayout>
+
+</LinearLayout>

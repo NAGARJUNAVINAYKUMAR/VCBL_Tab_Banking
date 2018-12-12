@@ -1,0 +1,79 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "com.vcbl.tabbanking"
+        minSdkVersion 16
+        targetSdkVersion 27
+        versionCode 1
+        versionName "0.002"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    useLibrary 'org.apache.http.legacy'
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.0'
+
+    // toasty
+    implementation 'com.github.GrenderG:Toasty:1.2.5'
+    api 'com.github.GrenderG:Toasty:1.2.5'
+
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+
+    implementation 'com.android.support:design:27.1.1'
+    implementation 'uk.co.chrisjenx:calligraphy:2.3.0'
+    implementation 'com.rengwuxian.materialedittext:library:2.1.4'
+
+    // image
+    implementation files('libs/ImageSupport-V1.5.jar')
+
+    // leopard library
+    implementation files('libs/LeopardProwessSdkV-1.1.6.jar')
+
+    implementation 'com.android.support:cardview-v7:27.1.1'
+    implementation 'com.android.support:recyclerview-v7:27.1.1'
+    implementation 'com.android.support:gridlayout-v7:27.1.1'
+
+    // runtime permissions
+    implementation 'com.github.karanchuri:PermissionManager:0.1.0'
+
+    // date and time picker
+    implementation 'com.wdullaer:materialdatetimepicker:2.3.0'
+    api 'com.wdullaer:materialdatetimepicker:2.3.0'
+
+    // protobuff
+    implementation 'com.google.protobuf:protobuf-java:3.4.0'
+    api 'com.google.protobuf:protobuf-java:3.4.0'
+    implementation 'org.apache.directory.studio:org.apache.commons.io:2.4'
+    api 'org.apache.directory.studio:org.apache.commons.io:2.4'
+
+    // sqlite db asserts
+    implementation 'com.readystatesoftware.sqliteasset:sqliteassethelper:2.0.1'
+    api 'com.readystatesoftware.sqliteasset:sqliteassethelper:2.0.1'
+
+    // sqlite browser db
+    debugImplementation 'com.amitshekhar.android:debug-db:1.0.0'
+
+    // ftp
+    implementation files('libs/ftp4j-1.7.2.jar')
+
+    // leopard impress mobile
+    implementation files('libs/ProwessPride_V1.12.jar')
+
+    implementation files('libs/commons-validator-1.4.0.jar')
+
+    // signature view
+    implementation 'com.kyanogen.signatureview:signature-view:1.2'
+}

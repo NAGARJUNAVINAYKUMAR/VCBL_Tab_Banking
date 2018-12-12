@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <ScrollView
+        android:id="@+id/scroll_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:id="@+id/layoutContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/cardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/twenty"
+                card_view:cardBackgroundColor="@color/cardview_light_background"
+                card_view:cardCornerRadius="@dimen/ten">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tv_main_header"
+                        style="@style/text_view_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorPrimaryTooLight"
+                        android:gravity="center"
+                        android:padding="@dimen/ten"
+                        android:text="@string/personal_details"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/eighteen_sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/twenty">
+
+                        <android.support.v7.widget.AppCompatTextView
+                            style="@style/text_view_style"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/aadhaar_no_star" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/five"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+
+                            <android.support.v7.widget.AppCompatEditText
+                                android:id="@+id/et_aadhaar_no"
+                                style="@style/edit_text_style_square"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginEnd="@dimen/two"
+                                android:layout_marginRight="@dimen/two"
+                                android:layout_weight="0.3"
+                                android:drawableLeft="@drawable/ic_aadhaar_seeding_24x24"
+                                android:drawableStart="@drawable/ic_aadhaar_seeding_24x24"
+                                android:hint="@string/aadhaar_no_hint"
+                                android:inputType="number"
+                                android:maxLength="12"
+                                android:text="" />
+
+                            <android.support.v7.widget.AppCompatButton
+                                android:id="@+id/btn_get_aadhaar_details"
+                                style="@style/login_btn_style_square"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="@dimen/two"
+                                android:layout_marginStart="@dimen/two"
+                                android:layout_weight="0.7"
+                                android:text="@string/go" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/fifteen"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+
+                            <android.support.v7.widget.AppCompatTextView
+                                style="@style/text_view_style"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.1"
+                                android:text="@string/title_star" />
+
+                            <android.support.v7.widget.AppCompatTextView
+                                style="@style/text_view_style"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.4"
+                                android:text="@string/colon" />
+
+                            <android.support.v7.widget.AppCompatSpinner
+                                android:id="@+id/spinner_title"
+                                style="@style/spinner_style_square"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.5" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/ten"
+                            android:baselineAligned="false"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="@dimen/three"
+                                android:layout_marginRight="@dimen/three"
+                                android:layout_weight="0.5"
+                                android:orientation="vertical">
+
+                                <android.support.v7.widget.AppCompatTextView
+                                    style="@style/text_view_style"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/first_name_star" />
+
+                                <android.support.v7.widget.AppCompatEditText
+                                    android:id="@+id/et_first_name"
+                                    style="@style/edit_text_style_square"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/five"
+                                    android:hint="@string/first_name"
+                                    android:maxLength="50" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/three"
+                                android:layout_marginStart="@dimen/three"
+                                android:layout_weight="0.5"
+                                android:orientation="vertical">
+
+                                <android.support.v7.widget.AppCompatTextView
+                                    style="@style/text_view_style"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/last_name_star" />
+
+                                <android.support.v7.widget.AppCompatEditText
+                                    android:id="@+id/et_last_name"
+                                    style="@style/edit_text_style_square"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/five"
+                                    android:hint="@string/last_name"
+                                    android:maxLength="50" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <android.support.v7.widget.AppCompatTextView
+                            style="@style/text_view_style"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/ten"
+                            android:text="@string/father_name_star" />
+
+                        <android.support.v7.widget.AppCompatEditText
+                            android:id="@+id/et_father_name"
+                            style="@style/edit_text_style_square"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/five"
+                            android:hint="@string/father_name"
+                            android:maxLength="50" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            style="@style/text_view_style"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/ten"
+                            android:text="@string/mother_name" />
+
+                        <android.support.v7.widget.AppCompatEditText
+                            android:id="@+id/et_mother_name"
+                            style="@style/edit_text_style_square"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/five"
+                            android:hint="@string/mother_name"
+                            android:maxLength="50" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/ten"
+                            android:baselineAligned="false"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="@dimen/three"
+                                android:layout_marginRight="@dimen/three"
+                                android:layout_weight="0.5"
+                                android:orientation="vertical">
+
+                                <android.support.v7.widget.AppCompatTextView
+                                    style="@style/text_view_style"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/gender" />
+
+                                <android.support.v7.widget.AppCompatSpinner
+                                    android:id="@+id/spinner_gender"
+                                    style="@style/spinner_style_square"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/five" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/three"
+                                android:layout_marginStart="@dimen/three"
+                                android:layout_weight="0.5"
+                                android:orientation="vertical">
+
+                                <android.support.v7.widget.AppCompatTextView
+                                    style="@style/text_view_style"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/marital_status" />
+
+                                <android.support.v7.widget.AppCompatSpinner
+                                    android:id="@+id/spinner_marital_status"
+                                    style="@style/spinner_style_square"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/five" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/tv_spouse_details"
+                            style="@style/text_view_style"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/ten"
+                            android:text="@string/spouse_details"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="@dimen/eighteen_sp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:id="@+id/ll_spouse_details"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/five"
+                            android:background="@color/background_color"
+                            android:orientation="vertical"
+                            android:padding="@dimen/fifteen"
+                            android:visibility="visible">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:baselineAligned="false"
+                                android:orientation="horizontal"
+                                android:weightSum="1">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="@dimen/three"
+                                    android:layout_marginRight="@dimen/three"
+                                    android:layout_weight="0.5"
+                                    android:orientation="vertical">
+
+                                    <android.support.v7.widget.AppCompatTextView
+                                        style="@style/text_view_style"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/first_name_star"
+                                        tools:ignore="TooDeepLayout" />
+
+                                    <android.support.v7.widget.AppCompatEditText
+                                        android:id="@+id/et_spouse_first_name"
+                                        style="@style/edit_text_style_square"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="@dimen/five"
+                                        android:hint="@string/first_name"
+                                        android:maxLength="50" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/three"
+                                    android:layout_marginStart="@dimen/three"
+                                    android:layout_weight="0.5"
+                                    android:orientation="vertical">
+
+                                    <android.support.v7.widget.AppCompatTextView
+                                        style="@style/text_view_style"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="@string/last_name_star" />
+
+                                    <android.support.v7.widget.AppCompatEditText
+                                        android:id="@+id/et_spouse_last_name"
+                                        style="@style/edit_text_style_square"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="@dimen/five"
+                                        android:hint="@string/last_name"
+                                        android:maxLength="50" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <android.support.v7.widget.AppCompatTextView
+                                style="@style/text_view_style"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/ten"
+                                android:text="@string/aadhaar_no_star" />
+
+                            <android.support.v7.widget.AppCompatEditText
+                                android:id="@+id/et_spouse_aadhaar_no"
+                                style="@style/edit_text_style_square"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="@dimen/five"
+                                android:drawableLeft="@drawable/ic_aadhaar_seeding_24x24"
+                                android:drawableStart="@drawable/ic_aadhaar_seeding_24x24"
+                                android:hint="@string/aadhaar_no_hint"
+                                android:inputType="number"
+                                android:maxLength="12"
+                                android:text="" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/ten"
+                            android:baselineAligned="false"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="@dimen/three"
+                                android:layout_marginRight="@dimen/three"
+                                android:layout_weight="0.5"
+                                android:orientation="vertical">
+
+                                <android.support.v7.widget.AppCompatTextView
+                                    style="@style/text_view_style"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/date_of_birth" />
+
+                                <android.support.v7.widget.AppCompatTextView
+                                    android:id="@+id/tv_date_of_birth"
+                                    style="@style/edit_text_style_square"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/five"
+                                    android:drawableEnd="@drawable/ic_calender_24x24"
+                                    android:drawableRight="@drawable/ic_calender_24x24"
+                                    android:hint="@string/date_format"
+                                    android:text="" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/three"
+                                android:layout_marginStart="@dimen/three"
+                                android:layout_weight="0.5"
+                                android:orientation="vertical">
+
+                                <android.support.v7.widget.AppCompatTextView
+                                    style="@style/text_view_style"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/age_star" />
+
+                                <android.support.v7.widget.AppCompatEditText
+                                    android:id="@+id/et_age"
+                                    style="@style/edit_text_style_square"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/five"
+                                    android:hint="@string/age"
+                                    android:inputType="number"
+                                    android:maxLength="2" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="@dimen/ten"
+                            android:layout_marginTop="@dimen/twenty"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+
+                            <android.support.v7.widget.AppCompatButton
+                                style="@style/login_btn_style_square"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginEnd="@dimen/four"
+                                android:layout_marginRight="@dimen/four"
+                                android:layout_weight="0.33"
+                                android:text="@string/calculate"
+                                android:textSize="@dimen/sixteen_sp"
+                                android:visibility="invisible" />
+
+                            <android.support.v7.widget.AppCompatButton
+                                android:id="@+id/btn_clear_details"
+                                style="@style/login_btn_style_square"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginEnd="@dimen/two"
+                                android:layout_marginRight="@dimen/two"
+                                android:layout_weight="0.33"
+                                android:text="@string/clear" />
+
+                            <android.support.v7.widget.AppCompatButton
+                                android:id="@+id/btn_next_cust2"
+                                style="@style/login_btn_style_square"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="@dimen/two"
+                                android:layout_marginStart="@dimen/two"
+                                android:layout_weight="0.34"
+                                android:text="@string/next" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

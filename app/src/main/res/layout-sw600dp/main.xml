@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".activities.Main">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/footer"
+        style="@style/footer_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@null"
+            android:padding="@dimen/ten"
+            android:layout_marginTop="@dimen/twenty"
+            android:src="@drawable/btbanner1" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_scan_BT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/twenty"
+            android:background="@drawable/btn_bluetooth"
+            android:gravity="center" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tv_scan_BT"
+            style="@style/text_view_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/ten"
+            android:gravity="center"
+            android:text="@string/scan_bluetooth_device"
+            android:textColor="@color/colorAccent"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:padding="@dimen/five"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/ll_pair_connect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/twenty"
+            android:layout_marginRight="@dimen/twenty"
+            android:layout_marginTop="@dimen/twenty"
+            android:padding="@dimen/ten"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_bt_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/five"
+                android:weightSum="3">
+
+                <android.support.v7.widget.AppCompatTextView
+                    style="@style/text_view_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.9"
+                    android:text="@string/actMain_link_device_info_title" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    style="@style/text_view_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.4"
+                    android:text="@string/colon" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_device_name"
+                    style="@style/text_view_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:text="@string/actMain_device_info"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/btn_pair_BT"
+                    style="@style/login_btn_style_square"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:onClick="onClickBtnPair"
+                    android:text="@string/actMain_btn_pair" />
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/btn_connect_BT"
+                    style="@style/login_btn_style_square"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:onClick="onClickBtnConn"
+                    android:text="@string/actMain_btn_comm" />
+
+            </LinearLayout>
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btn_exit"
+                style="@style/login_btn_style_square"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten"
+                android:text="@string/exit" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

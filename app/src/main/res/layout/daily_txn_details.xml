@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_main_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:paddingLeft="@dimen/ten"
+        android:paddingRight="@dimen/ten"
+        android:paddingTop="@dimen/five"
+        android:text="@string/daily_txn_details"
+        android:textSize="@dimen/eighteen_sp"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tv_main_header"
+        android:layout_marginBottom="@dimen/five" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_reports_not_found"
+        style="@style/text_view_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:padding="@dimen/seven"
+        android:text=""
+        android:textColor="@color/colorRed"
+        android:textStyle="bold"
+        android:visibility="visible" />
+
+</RelativeLayout>

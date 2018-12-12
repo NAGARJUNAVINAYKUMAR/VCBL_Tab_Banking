@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <ScrollView
+        android:id="@+id/scroll_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:id="@+id/layoutContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/cardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/ten"
+                card_view:cardBackgroundColor="@color/cardview_light_background"
+                card_view:cardCornerRadius="@dimen/five">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tv_main_header"
+                        style="@style/text_view_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorPrimaryTooLight"
+                        android:gravity="center"
+                        android:padding="@dimen/seven"
+                        android:text="Txn"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/eighteen_sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:id="@+id/layout_container_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/ten">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+
+                            <android.support.v7.widget.AppCompatTextView
+                                style="@style/text_view_style"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.0"
+                                android:text="@string/product_name" />
+
+                            <android.support.v7.widget.AppCompatTextView
+                                style="@style/text_view_style"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.4"
+                                android:text="@string/colon" />
+
+                            <android.support.v7.widget.AppCompatSpinner
+                                android:id="@+id/spinner_product_name"
+                                style="@style/spinner_style_square"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.6"
+                                android:gravity="start" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/ten"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+
+                            <android.support.v7.widget.AppCompatTextView
+                                style="@style/text_view_style"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.0"
+                                android:text="@string/account_no" />
+
+                            <android.support.v7.widget.AppCompatTextView
+                                style="@style/text_view_style"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.4"
+                                android:text="@string/colon" />
+
+                            <android.support.v7.widget.AppCompatEditText
+                                android:id="@+id/et_account_no"
+                                style="@style/edit_text_style_square"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.6"
+                                android:drawableLeft="@drawable/ic_bank_18x18"
+                                android:drawableStart="@drawable/ic_bank_18x18"
+                                android:hint="@string/account_no"
+                                android:inputType="number"
+                                android:maxLength="8" />
+
+                            <requestFocus />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="@dimen/ten"
+                            android:layout_marginTop="@dimen/twenty"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+
+                            <!--<android.support.v7.widget.AppCompatButton
+                                style="@style/login_btn_style_square"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginEnd="@dimen/four"
+                                android:layout_marginRight="@dimen/four"
+                                android:layout_weight="0.33"
+                                android:text="@string/calculate"
+                                android:textSize="@dimen/sixteen_sp"
+                                android:visibility="invisible" />-->
+
+                            <android.support.v7.widget.AppCompatButton
+                                android:id="@+id/btn_clear_details"
+                                style="@style/login_btn_style_square"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginEnd="@dimen/two"
+                                android:layout_marginRight="@dimen/two"
+                                android:layout_weight="0.5"
+                                android:padding="@dimen/ten"
+                                android:text="@string/clear" />
+
+                            <android.support.v7.widget.AppCompatButton
+                                android:id="@+id/btn_get_details"
+                                style="@style/login_btn_style_square"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="@dimen/two"
+                                android:layout_marginStart="@dimen/two"
+                                android:layout_weight="0.5"
+                                android:padding="@dimen/ten"
+                                android:text="@string/submit" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/tv_account_details_response"
+                style="@style/text_view_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/ten"
+                android:layout_marginLeft="@dimen/ten"
+                android:layout_marginRight="@dimen/ten"
+                android:gravity="center"
+                android:padding="@dimen/seven"
+                android:text=""
+                android:textColor="@color/colorRed"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/five"
+        android:layout_marginLeft="@dimen/ten"
+        android:layout_marginRight="@dimen/ten"
+        android:layout_marginTop="@dimen/five"
+        card_view:cardBackgroundColor="@color/cardview_light_background"
+        card_view:cardCornerRadius="@dimen/five">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/layout_animation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/colorPrimaryTooLight"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/five"
+                android:paddingLeft="@dimen/ten"
+                android:paddingRight="@dimen/ten"
+                android:paddingTop="@dimen/five"
+                android:weightSum="1">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_sl_no"
+                    style="@style/text_view_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/five"
+                    android:layout_marginRight="@dimen/five"
+                    android:layout_weight="0.3"
+                    android:singleLine="true"
+                    android:textSize="@dimen/fourteen_sp"
+                    android:text="000000000000" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_productCode_accNo"
+                    style="@style/text_view_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.32"
+                    android:singleLine="true"
+                    android:textSize="@dimen/fourteen_sp"
+                    android:text="MORL/00000" />
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/tv_amount"
+                    style="@style/text_view_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/five"
+                    android:layout_marginStart="@dimen/five"
+                    android:singleLine="true"
+                    android:textSize="@dimen/fourteen_sp"
+                    android:layout_weight="0.38"
+                    android:text="75899" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_expand_collapse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/ten">
+
+                <LinearLayout
+                    android:id="@+id/ll_branch_id_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        style="@style/text_view_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.9"
+                        android:text="@string/branch_id_name" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        style="@style/text_view_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.4"
+                        android:text="@string/colon" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tv_branch_id_name"
+                        style="@style/text_view_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.6"
+                        android:text="--"
+                        android:textColor="@color/colorPrimaryDark" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_datetime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/five"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tv_datetime"
+                        style="@style/text_view_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.9"
+                        android:text="@string/date" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        style="@style/text_view_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.4"
+                        android:text="@string/colon" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/dlg_datetime"
+                        style="@style/text_view_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.6"
+                        android:text="--"
+                        android:textColor="@color/colorPrimaryDark" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_customer_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/five"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tv_customer_name"
+                        style="@style/text_view_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.9"
+                        android:text="@string/customer" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        style="@style/text_view_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.4"
+                        android:text="@string/colon" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/dlg_customer_name"
+                        style="@style/text_view_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.6"
+                        android:text="--"
+                        android:textColor="@color/colorPrimaryDark" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_customer_account_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/five"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tv_account_no"
+                        style="@style/text_view_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.9"
+                        android:text="@string/account_no" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        style="@style/text_view_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.4"
+                        android:text="@string/colon" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/dlg_account_no"
+                        style="@style/text_view_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.6"
+                        android:text="--"
+                        android:textColor="@color/colorPrimaryDark" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_container_amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/five"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tv_amount_dlg"
+                        style="@style/text_view_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.9"
+                        android:text="@string/avl_amount" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        style="@style/text_view_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.4"
+                        android:text="@string/colon" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/dlg_amount"
+                        style="@style/text_view_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.6"
+                        android:text="--"
+                        android:textColor="@color/colorPrimaryDark" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_balance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/five"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        style="@style/text_view_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.9"
+                        android:text="@string/balance" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        style="@style/text_view_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.4"
+                        android:text="@string/colon" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tv_balance"
+                        style="@style/text_view_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.6"
+                        android:text="--"
+                        android:textColor="@color/colorPrimaryDark" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_overdue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/five"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tv_overdue_label"
+                        style="@style/text_view_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.9"
+                        android:text="@string/overdue" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        style="@style/text_view_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.4"
+                        android:text="@string/colon" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tv_overdue"
+                        style="@style/text_view_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.6"
+                        android:text="--"
+                        android:textColor="@color/colorPrimaryDark" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_customer_ref_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/five"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tv_ref_no"
+                        style="@style/text_view_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.9"
+                        android:text="@string/ref_no" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        style="@style/text_view_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.4"
+                        android:text="@string/colon" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/dlg_ref_no"
+                        style="@style/text_view_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.6"
+                        android:text="--"
+                        android:textColor="@color/colorPrimaryDark" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_agent_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/five"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tv_agent_id"
+                        style="@style/text_view_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.9"
+                        android:text="@string/agent_id" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        style="@style/text_view_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.4"
+                        android:text="@string/colon" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/dlg_agent_id"
+                        style="@style/text_view_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.6"
+                        android:text="--"
+                        android:textColor="@color/colorPrimaryDark" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

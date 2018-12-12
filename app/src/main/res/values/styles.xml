@@ -1,0 +1,149 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- FOOTER STYLE -->
+    <style name="footer_style">
+        <!--<item name="android:drawableRight">@drawaapp_logologo</item>-->
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/fourteen_sp</item>
+        <item name="android:text">@string/footer_txt</item>
+        <item name="android:background">@color/colorPrimaryDark</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:paddingLeft">@dimen/ten</item>
+        <item name="android:paddingRight">@dimen/ten</item>
+    </style>
+
+    <!-- LINKED WITH LOGIN BUTTON STYLE -->
+    <style name="text_style">
+        <item name="android:textSize">@dimen/sixteen_sp</item>
+        <!-- <item name="android:textStyle">bold</item> -->
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <!--Text Style-->
+    <style name="textStyleCommon">
+        <item name="android:textSize">@dimen/sixteen_sp</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <!--TextView Style-->
+    <style name="text_view_style">
+        <item name="android:textSize">@dimen/sixteen_sp</item>
+        <item name="android:textColor">@android:color/black</item>
+        <!--<item name="android:textStyle">bold</item>-->
+    </style>
+
+    <!--EditText Style-->
+    <style name="edit_text_style">
+        <item name="android:background">@drawable/edit_text_style</item>
+        <item name="android:textColorHint">@color/hintColor</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">start</item>
+        <item name="android:padding">@dimen/ten</item>
+        <item name="android:paddingRight">@dimen/fifteen</item>
+        <item name="android:paddingLeft">@dimen/fifteen</item>
+        <item name="android:textSize">@dimen/sixteen_sp</item>
+    </style>
+
+    <style name="edit_text_style_square">
+        <item name="android:background">@drawable/edit_text_style_square</item>
+        <item name="android:textColorHint">@color/hintColor</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">start</item>
+        <item name="android:paddingTop">@dimen/ten</item>
+        <item name="android:paddingBottom">@dimen/ten</item>
+        <item name="android:paddingRight">@dimen/fifteen</item>
+        <item name="android:paddingLeft">@dimen/fifteen</item>
+        <item name="android:textSize">@dimen/sixteen_sp</item>
+    </style>
+
+    <!--Spinner Style-->
+    <style name="spinner_style">
+        <item name="android:background">@drawable/spinner_style</item>
+        <item name="android:drawableRight">@drawable/down_arrow</item>
+        <item name="android:textColor">@color/hintColor</item>
+        <item name="android:padding">@dimen/ten</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/sixteen_sp</item>
+    </style>
+
+    <!--Spinner Style-->
+    <style name="spinner_style_square">
+        <item name="android:background">@drawable/spinner_style_square</item>
+        <item name="android:drawableRight">@drawable/down_arrow</item>
+        <item name="android:textColor">@color/hintColor</item>
+        <item name="android:paddingTop">@dimen/ten</item>
+        <item name="android:paddingBottom">@dimen/ten</item>
+        <item name="android:paddingLeft">@dimen/fifteen</item>
+        <item name="android:paddingRight">@dimen/fifteen</item>
+        <item name="android:gravity">start</item>
+        <item name="android:textSize">@dimen/sixteen_sp</item>
+    </style>
+
+    <!--Button Style -->
+    <style name="login_btn_style" parent="text_style">
+        <item name="android:background">@drawable/button_background_change</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingTop">@dimen/twelve</item>
+        <item name="android:paddingBottom">@dimen/twelve</item>
+        <item name="android:paddingLeft">@dimen/thiryfive</item>
+        <item name="android:paddingRight">@dimen/thiryfive</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <!--Button Style -->
+    <style name="login_btn_style_square" parent="text_style">
+        <item name="android:background">@drawable/register_button_background_change</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingTop">@dimen/twelve</item>
+        <item name="android:paddingBottom">@dimen/twelve</item>
+        <item name="android:paddingLeft">@dimen/thiryfive</item>
+        <item name="android:paddingRight">@dimen/thiryfive</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <!--Button Input Style-->
+    <style name="button_input_style">
+        <item name="android:background">@drawable/button_arrow_style</item>
+        <item name="android:drawableRight">@drawable/down_arrow</item>
+        <item name="android:textColor">@color/hintColor</item>
+        <item name="android:padding">@dimen/ten</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/sixteen_sp</item>
+    </style>
+
+
+    <!--copied style resources from leopard-->
+    <style name="textfont" parent="@android:style/TextAppearance.Medium">
+        <item name="android:typeface">sans</item>
+        <item name="android:textColor">#000000</item>
+
+    </style>
+
+    <style name="textfont1">
+        <item name="android:typeface">sans</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">22dp</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <!--copied style resources from leopard-->
+
+
+</resources>

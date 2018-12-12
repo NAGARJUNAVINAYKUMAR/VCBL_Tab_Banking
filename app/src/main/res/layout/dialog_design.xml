@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/five_hundred"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:padding="@dimen/ten"
+    android:contentDescription="@null"
+    android:background="@drawable/dialog_design_style"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:contentDescription="@null"
+        android:layout_marginTop="@dimen/ten"
+        android:src="@drawable/error"
+        android:tint="@color/info_color" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_err"
+        style="@style/text_view_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/ten"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        android:textSize="@dimen/twenty_sp"
+        android:text="@string/response" />
+
+    <!--<TextView
+        android:id="@+id/tv_err"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="Error"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp" />-->
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_err_msg"
+        style="@style/text_view_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/ten"
+        android:textColor="@color/colorRed"
+        android:text="@string/empty_response_received" />
+
+    <!--<TextView
+        android:id="@+id/tv_err_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="@string/empty_response_received"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp" />-->
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_err"
+        style="@style/login_btn_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/twenty"
+        android:layout_gravity="center"
+        android:text="@string/ok" />
+
+    <!--<Button
+        android:id="@+id/btn_err"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorPrimary"
+        android:text="Ok"
+        android:textColor="#fff" />-->
+
+</LinearLayout>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/ten"
+    android:background="@drawable/dialog_design_style"
+    android:orientation="vertical"
+    android:padding="@dimen/ten">
+
+    <!--<RadioGroup
+        android:id="@+id/rg_select_smart_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/ten">
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/rb_primary_smart_card"
+            style="@style/text_view_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/primary_smart_card" />
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/rb_secondary_smart_card"
+            style="@style/text_view_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/secondary_smart_card" />
+
+    </RadioGroup>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btnContinue"
+        style="@style/login_btn_style_square"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/twenty"
+        android:layout_marginTop="@dimen/ten"
+        android:text="@string/continu" />-->
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_primrysmrtcrd"
+        style="@style/login_btn_style_square"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/primary_smart_card" />
+
+    <LinearLayout
+        android:id="@+id/second01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/ten"
+        android:visibility="gone">
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_PrimryPwrup"
+            style="@style/login_btn_style_square"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Primary Power Up" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_Primrycardstatus"
+            style="@style/login_btn_style_square"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/ten"
+            android:text="Primary Card Status" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_PrimrypPwrdwn"
+            style="@style/login_btn_style_square"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/ten"
+            android:text="Primary Power Down" />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_secndrysmrtcard"
+        style="@style/login_btn_style_square"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/ten"
+        android:text="@string/secondary_smart_card" />
+
+    <LinearLayout
+        android:id="@+id/second02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/ten"
+        android:visibility="gone">
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_SecondPwrUp"
+            style="@style/login_btn_style_square"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Secondary Power Up" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_SecndCardStatus"
+            style="@style/login_btn_style_square"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/ten"
+            android:text="Secondary Card Status" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_SecndPwrDwn"
+            style="@style/login_btn_style_square"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/ten"
+            android:text="Secondary Power Down" />
+
+    </LinearLayout>
+
+</LinearLayout>

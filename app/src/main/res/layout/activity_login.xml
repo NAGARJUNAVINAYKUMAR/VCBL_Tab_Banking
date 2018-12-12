@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activities.LoginActivity">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/footer"
+        style="@style/footer_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/footer"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/sixty"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/twenty"
+            android:layout_marginRight="@dimen/twenty"
+            android:layout_marginTop="@dimen/fifty"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_vcbl_header" />
+
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/twenty"
+            card_view:cardBackgroundColor="@color/cardview_light_background"
+            card_view:cardCornerRadius="@dimen/five">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.AppCompatTextView
+                    style="@style/text_view_style"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimaryTooLight"
+                    android:gravity="center"
+                    android:padding="@dimen/ten"
+                    android:text="@string/login"
+                    android:textSize="@dimen/eighteen_sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/layout_container_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/twenty">
+
+                    <android.support.v7.widget.AppCompatEditText
+                        android:id="@+id/et_emp_id"
+                        style="@style/edit_text_style_square"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_perm_identity_black_18dp"
+                        android:drawableStart="@drawable/ic_perm_identity_black_18dp"
+                        android:hint="@string/employee_id"
+                        android:inputType="text"
+                        android:maxLength="15" />
+
+                    <android.support.v7.widget.AppCompatEditText
+                        android:id="@+id/et_password"
+                        style="@style/edit_text_style_square"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/ten"
+                        android:drawableLeft="@drawable/ic_password_18x18"
+                        android:drawableStart="@drawable/ic_password_18x18"
+                        android:hint="@string/pass_word"
+                        android:inputType="textPassword"
+                        android:maxLength="16" />
+
+                    <!--<android.support.design.widget.TextInputLayout
+                        android:id="@+id/textInputLayout1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <android.support.v7.widget.AppCompatEditText
+                            android:id="@+id/et_emp_id"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/ic_perm_identity_black_18dp"
+                            android:drawableStart="@drawable/ic_perm_identity_black_18dp"
+                            android:hint="@string/employee_id"
+                            android:inputType="text"
+                            android:maxLength="15" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/textInputLayout2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/two">
+
+                        <android.support.v7.widget.AppCompatEditText
+                            android:id="@+id/et_password"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/ic_password_18x18"
+                            android:drawableStart="@drawable/ic_password_18x18"
+                            android:hint="@string/pass_word"
+                            android:inputType="textPassword"
+                            android:maxLength="16" />
+
+                    </android.support.design.widget.TextInputLayout>-->
+
+                    <android.support.v7.widget.AppCompatButton
+                        android:id="@+id/btn_login"
+                        style="@style/login_btn_style_square"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="@dimen/ten"
+                        android:layout_marginTop="@dimen/ten"
+                        android:text="@string/submit" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+</RelativeLayout>

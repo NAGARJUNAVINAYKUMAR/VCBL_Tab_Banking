@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <ScrollView
+        android:id="@+id/scroll_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:id="@+id/layoutContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/cardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/ten"
+                card_view:cardBackgroundColor="@color/cardview_light_background"
+                card_view:cardCornerRadius="@dimen/five">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tv_main_header"
+                        style="@style/text_view_style"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorPrimaryTooLight"
+                        android:gravity="center"
+                        android:padding="@dimen/seven"
+                        android:text="@string/other_details"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="@dimen/eighteen_sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/ten">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:baselineAligned="false"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+
+                            <android.support.v7.widget.AppCompatTextView
+                                style="@style/text_view_style"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.6"
+                                android:text="@string/house_type" />
+
+                            <RadioGroup
+                                android:id="@+id/rg_house_type"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.4"
+                                android:orientation="horizontal">
+
+                                <android.support.v7.widget.AppCompatRadioButton
+                                    android:id="@+id/rb_own"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/five"
+                                    android:layout_marginStart="@dimen/five"
+                                    android:checked="true"
+                                    android:padding="@dimen/five"
+                                    android:text="@string/own"
+                                    tools:ignore="TooDeepLayout" />
+
+                                <android.support.v7.widget.AppCompatRadioButton
+                                    android:id="@+id/rb_rental"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/ten"
+                                    android:layout_marginStart="@dimen/ten"
+                                    android:padding="@dimen/five"
+                                    android:text="@string/rental" />
+
+                            </RadioGroup>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/five"
+                            android:baselineAligned="false"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+
+                            <android.support.v7.widget.AppCompatTextView
+                                style="@style/text_view_style"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.6"
+                                android:text="@string/bpl" />
+
+                            <RadioGroup
+                                android:id="@+id/rg_bpl"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.4"
+                                android:orientation="horizontal">
+
+                                <android.support.v7.widget.AppCompatRadioButton
+                                    android:id="@+id/rb_bpl_yes"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/five"
+                                    android:layout_marginStart="@dimen/five"
+                                    android:checked="true"
+                                    android:padding="@dimen/five"
+                                    android:text="@string/yes"
+                                    tools:ignore="TooDeepLayout" />
+
+                                <android.support.v7.widget.AppCompatRadioButton
+                                    android:id="@+id/rb_bpl_no"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/ten"
+                                    android:layout_marginStart="@dimen/ten"
+                                    android:padding="@dimen/five"
+                                    android:text="@string/no" />
+
+                            </RadioGroup>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/five"
+                            android:baselineAligned="false"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="@dimen/three"
+                                android:layout_marginRight="@dimen/three"
+                                android:layout_weight="0.5"
+                                android:orientation="vertical">
+
+                                <android.support.v7.widget.AppCompatTextView
+                                    style="@style/text_view_style"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/land_holding" />
+
+                                <android.support.v7.widget.AppCompatEditText
+                                    android:id="@+id/et_land_holding"
+                                    style="@style/edit_text_style_square"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/two"
+                                    android:hint="@string/land_holding" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/three"
+                                android:layout_marginStart="@dimen/three"
+                                android:layout_weight="0.5"
+                                android:orientation="vertical">
+
+                                <android.support.v7.widget.AppCompatTextView
+                                    style="@style/text_view_style"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/dependent" />
+
+                                <android.support.v7.widget.AppCompatEditText
+                                    android:id="@+id/et_dependent"
+                                    style="@style/edit_text_style_square"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/two"
+                                    android:hint="@string/dependent"
+                                    android:inputType="number"
+                                    android:maxLength="2" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/five"
+                            android:baselineAligned="false"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="@dimen/three"
+                                android:layout_marginRight="@dimen/three"
+                                android:layout_weight="0.5"
+                                android:orientation="vertical">
+
+                                <android.support.v7.widget.AppCompatTextView
+                                    style="@style/text_view_style"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/pan_gir_no" />
+
+                                <android.support.v7.widget.AppCompatEditText
+                                    android:id="@+id/et_pan_gir_no"
+                                    style="@style/edit_text_style_square"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/two"
+                                    android:digits="0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                                    android:hint="@string/pan_gir_no"
+                                    android:imeOptions="actionNext"
+                                    android:inputType="text|textCapCharacters"
+                                    android:maxLength="10" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/three"
+                                android:layout_marginStart="@dimen/three"
+                                android:layout_weight="0.5"
+                                android:orientation="vertical">
+
+                                <android.support.v7.widget.AppCompatTextView
+                                    style="@style/text_view_style"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/nrega_no" />
+
+                                <android.support.v7.widget.AppCompatEditText
+                                    android:id="@+id/et_nrega_no"
+                                    style="@style/edit_text_style_square"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/two"
+                                    android:hint="@string/nrega_no" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <android.support.v7.widget.AppCompatTextView
+                            style="@style/text_view_style"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/five"
+                            android:text="@string/ssp_no" />
+
+                        <android.support.v7.widget.AppCompatEditText
+                            android:id="@+id/et_ssp_no"
+                            style="@style/edit_text_style_square"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/two"
+                            android:hint="@string/ssp_no" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            style="@style/text_view_style"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/five"
+                            android:text="@string/education_star" />
+
+                        <android.support.v7.widget.AppCompatSpinner
+                            android:id="@+id/spinner_education"
+                            style="@style/spinner_style_square"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/two"/>
+
+                        <android.support.v7.widget.AppCompatTextView
+                            style="@style/text_view_style"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/five"
+                            android:text= "@string/occupation_star" />
+
+                        <android.support.v7.widget.AppCompatSpinner
+                            android:id="@+id/spinner_occupation"
+                            style="@style/spinner_style_square"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/two" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            style="@style/text_view_style"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/five"
+                            android:text="@string/community_star" />
+
+                        <android.support.v7.widget.AppCompatSpinner
+                            android:id="@+id/spinner_community"
+                            style="@style/spinner_style_square"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/two" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            style="@style/text_view_style"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/five"
+                            android:text="@string/special_category" />
+
+                        <android.support.v7.widget.AppCompatSpinner
+                            android:id="@+id/spinner_spec_category"
+                            style="@style/spinner_style_square"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/two" />
+
+                        <android.support.v7.widget.AppCompatTextView
+                            style="@style/text_view_style"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/five"
+                            android:text="@string/religion" />
+
+                        <android.support.v7.widget.AppCompatSpinner
+                            android:id="@+id/spinner_religion"
+                            style="@style/spinner_style_square"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/two" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/five"
+                            android:baselineAligned="false"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+
+                            <android.support.v7.widget.AppCompatTextView
+                                style="@style/text_view_style"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.6"
+                                android:text="@string/minority" />
+
+                            <RadioGroup
+                                android:id="@+id/rg_minority"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.4"
+                                android:orientation="horizontal">
+
+                                <android.support.v7.widget.AppCompatRadioButton
+                                    android:id="@+id/rb_minority_yes"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/five"
+                                    android:layout_marginStart="@dimen/five"
+                                    android:checked="true"
+                                    android:padding="@dimen/five"
+                                    android:text="@string/yes"
+                                    tools:ignore="TooDeepLayout" />
+
+                                <android.support.v7.widget.AppCompatRadioButton
+                                    android:id="@+id/rb_minority_no"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/ten"
+                                    android:layout_marginStart="@dimen/ten"
+                                    android:padding="@dimen/five"
+                                    android:text="@string/no" />
+
+                            </RadioGroup>
+
+                        </LinearLayout>
+
+                        <android.support.v7.widget.AppCompatTextView
+                            style="@style/text_view_style"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/five"
+                            android:text="@string/auth_person" />
+
+                        <android.support.v7.widget.AppCompatSpinner
+                            android:id="@+id/spinner_auth_person"
+                            style="@style/spinner_style_square"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/two" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="@dimen/ten"
+                            android:layout_marginTop="@dimen/twenty"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+
+                            <!--                            <android.support.v7.widget.AppCompatButton
+                                                            style="@style/login_btn_style_square"
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="wrap_content"
+                                                            android:layout_gravity="center"
+                                                            android:layout_marginEnd="@dimen/four"
+                                                            android:layout_marginRight="@dimen/four"
+                                                            android:layout_weight="0.33"
+                                                            android:text="@string/calculate"
+                                                            android:textSize="@dimen/sixteen_sp"
+                                                            android:visibility="invisible" />-->
+
+                            <android.support.v7.widget.AppCompatButton
+                                android:id="@+id/btn_clear_details"
+                                style="@style/login_btn_style_square"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginEnd="@dimen/two"
+                                android:layout_marginRight="@dimen/two"
+                                android:layout_weight="0.5"
+                                android:text="@string/clear" />
+
+                            <android.support.v7.widget.AppCompatButton
+                                android:id="@+id/btn_next"
+                                style="@style/login_btn_style_square"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="@dimen/two"
+                                android:layout_marginStart="@dimen/two"
+                                android:layout_weight="0.5"
+                                android:text="@string/next" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

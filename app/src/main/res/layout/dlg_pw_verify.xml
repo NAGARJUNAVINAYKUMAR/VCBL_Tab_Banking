@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/ten"
+    android:background="@drawable/dialog_design_style"
+    android:orientation="vertical"
+    android:padding="@dimen/twenty">
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/text_view_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/password" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/two"
+        android:layout_marginBottom="@dimen/ten"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/et_pin_no"
+            style="@style/edit_text_style_square"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:layout_marginEnd="@dimen/three"
+            android:layout_marginRight="@dimen/three"
+            android:drawableLeft="@drawable/ic_password_18x18"
+            android:drawableStart="@drawable/ic_password_18x18"
+            android:layout_weight="0.4"
+            android:maxLength="16" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_submit"
+            style="@style/login_btn_style_square"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/three"
+            android:layout_marginStart="@dimen/three"
+            android:padding="@dimen/ten"
+            android:layout_weight="0.6"
+            android:text="@string/submit" />
+
+    </LinearLayout>
+
+</LinearLayout>

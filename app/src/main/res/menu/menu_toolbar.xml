@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_scan"
+        android:orderInCategory="100"
+        android:icon="@drawable/scan"
+        app:showAsAction="ifRoom"
+        android:title="@string/scan" />
+
+    <item
+        android:id="@+id/action_logout"
+        android:orderInCategory="200"
+        android:title="@string/logout"
+        android:icon="@drawable/exit_back1"
+        app:showAsAction="ifRoom" />
+
+    <!--<item
+        android:id="@+id/action_share"
+        android:orderInCategory="300"
+        android:title="@string/share"
+        app:showAsAction="never" />-->
+
+</menu>

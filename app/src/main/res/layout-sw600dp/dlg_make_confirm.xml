@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_make_confirm"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/twenty"
+    android:background="@drawable/dialog_design_style"
+    android:orientation="vertical"
+    android:padding="@dimen/twenty">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_information"
+        style="@style/text_view_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/info"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tv_biometric"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/ten"
+        android:text="@string/login_type"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/sixteen_sp" />
+
+    <LinearLayout
+        android:id="@+id/ll_pin_no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/ten"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.AppCompatTextView
+            style="@style/text_view_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/password" />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/et_pin_no"
+            style="@style/edit_text_style_square"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/five"
+            android:drawableLeft="@drawable/ic_password_24x24"
+            android:drawableStart="@drawable/ic_password_24x24"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:maxLength="16" />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.AppCompatCheckBox
+        android:id="@+id/cb_accept"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/ten"
+        android:text="@string/accept_the_payment"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/sixteen_sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/ten"
+        android:layout_marginTop="@dimen/twenty"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <android.support.v7.widget.AppCompatButton
+            style="@style/login_btn_style_square"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/four"
+            android:layout_marginRight="@dimen/four"
+            android:layout_weight="0.34"
+            android:text="@string/calculate"
+            android:textSize="@dimen/sixteen_sp"
+            android:visibility="invisible" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_no"
+            style="@style/login_btn_style_square"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/two"
+            android:layout_marginRight="@dimen/two"
+            android:layout_weight="0.33"
+            android:text="@string/cancel" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_yes"
+            style="@style/login_btn_style_square"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/two"
+            android:layout_marginStart="@dimen/two"
+            android:layout_weight="0.33"
+            android:text="@string/confirm" />
+
+    </LinearLayout>
+
+</LinearLayout>

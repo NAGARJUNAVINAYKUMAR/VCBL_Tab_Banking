@@ -1,0 +1,577 @@
+<resources>
+    <string name="app_name">VCBL Tab Banking</string>
+
+    <!--Runtime permissions-->
+    <string name="permission_preference">permission_preference</string>
+    <string name="permission_camera">permission_camera</string>
+    <string name="permission_contacts">permission_contacts</string>
+    <string name="permission_storage">permission_storage</string>
+
+    <string name="slide_1_title">Hello Food!</string>
+    <string name="slide_1_desc">The easiest way to order food from your favourite restaurant!
+    The easiest way to order food from your favourite restaurant,
+    The easiest way to order food from your favourite restaurant,
+    The easiest way to order food from your favourite restaurant,
+    The easiest way to order food from your favourite restaurant,
+    The easiest way to order food from your favourite restaurant !</string>
+
+    <string name="slide_2_title">Movie Tickets</string>
+    <string name="slide_2_desc">The easiest way to order food from your favourite restaurant!
+    The easiest way to order food from your favourite restaurant,
+    The easiest way to order food from your favourite restaurant,
+    The easiest way to order food from your favourite restaurant,
+    The easiest way to order food from your favourite restaurant,
+    The easiest way to order food from your favourite restaurant !</string>
+
+    <string name="slide_3_title">Great Discounts</string>
+    <string name="slide_3_desc">The easiest way to order food from your favourite restaurant!
+    The easiest way to order food from your favourite restaurant,
+    The easiest way to order food from your favourite restaurant,
+    The easiest way to order food from your favourite restaurant,
+    The easiest way to order food from your favourite restaurant,
+    The easiest way to order food from your favourite restaurant !</string>
+
+    <string name="slide_4_title">World Travel</string>
+    <string name="slide_4_desc">The easiest way to order food from your favourite restaurant!
+    The easiest way to order food from your favourite restaurant,
+    The easiest way to order food from your favourite restaurant,
+    The easiest way to order food from your favourite restaurant,
+    The easiest way to order food from your favourite restaurant,
+    The easiest way to order food from your favourite restaurant !</string>
+
+    <string name="my_preference">"com.example.vinay.MyPref"</string>
+    <string name="my_preference_key">com.example.vinay.MyPrefKey</string>
+
+    <string name="welcome">Welcome</string>
+    <string name="visakha_co_operative_bank_ltd">The Visakhapatnam\nCo-Operative Bank Ltd.</string>
+    <string name="visakha_co_operative_bank_ltd_single_line">VISAKHA CO-OPERATIVE BANK LTD.</string>
+    <string name="visakha_co_operative_bank_ltd_two_line">VISAKHA CO-OPERATIVE\nBANK LTD.</string>
+    <string name="footer_txt">Invented And Developed By\nSaranda Software Pvt. Ltd.</string>
+    <string name="password">Password</string>
+    <string name="reason">Reason</string>
+    <string name="aadhaar_no_star">Aadhaar No. *</string>
+    <string name="title_star">Title *</string>
+    <string name="first_name_star">First Name *</string>
+    <string name="last_name_star">Last Name *</string>
+    <string name="father_name_star">Father Name *</string>
+    <string name="mother_name_star">Mother Name. *</string>
+    <string name="age_star">Age *</string>
+    <string name="customer_address_star">Present Address *</string>
+    <string name="state_star">State *</string>
+    <string name="city_star">City *</string>
+    <string name="country_star">Country *</string>
+    <string name="language_star">Language *</string>
+    <string name="contact_no_star">Contact No. *</string>
+    <string name="id_type_star">ID Type *</string>
+    <string name="id_number_star">ID Number *</string>
+    <string name="name_star">Name *</string>
+    <string name="relation_star">Relation *</string>
+    <string name="address_star">Address *</string>
+    <string name="pin_code_star">Pin Code *</string>
+    <string name="education_star">Education *</string>
+    <string name="occupation_star">Occupation *</string>
+    <string name="community_star">Community *</string>
+    <string name="photo_upload_star">Photo Upload *</string>
+    <string name="pass_word_star">Password *</string>
+    <string name="conf_pass_word_star">Confirm Password *</string>
+    <string name="branch_name_star">Branch Name *</string>
+    <string name="emp_id_star">Employee ID *</string>
+    <string name="mobile_no_star">Mobile No. *</string>
+    <string name="email_id_star">Email ID *</string>
+
+    <string name="request">Request</string>
+    <string name="login">Login</string>
+    <string name="user_registration">User Registration</string>
+    <string name="customer_registration">Customer Registration</string>
+    <string name="save">Save</string>
+    <string name="store">Store</string>
+    <string name="register">Register</string>
+    <string name="new_user_sign_up">New User ?</string>
+    <string name="submit">Submit</string>
+    <string name="back">Back</string>
+    <string name="clear">Clear</string>
+    <string name="print">Print</string>
+    <string name="reprint">Reprint</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">OK</string>
+    <string name="continu">Continue</string>
+    <string name="yes">Yes</string>
+    <string name="own">Own</string>
+    <string name="rental">Rental</string>
+    <string name="accept">Accept</string>
+    <string name="accept_the_payment">Accept the payment</string>
+    <string name="no">No</string>
+    <string name="okay">Okay</string>
+    <string name="get">Get</string>
+    <string name="go">Go</string>
+    <string name="get_details">Get Details</string>
+    <string name="loan_details">Loan Details</string>
+    <string name="enroll">Enroll</string>
+    <string name="biometric">Biometric</string>
+    <string name="pin_no">Pin</string>
+    <string name="enter_pin_no">Enter card pin no.</string>
+    <string name="atm_pin_no">Pin No.</string>
+    <string name="check_bt_conn">Check</string>
+    <string name="bt_connection">Bluetooth Connection</string>
+    <string name="check_bt_connectivity">Check BT Connectivity</string>
+    <string name="configure_bt">Configure Bluetooth</string>
+    <string name="select_bt_device">Select BT Device</string>
+    <string name="calculate">Calculate</string>
+    <string name="reset">Reset</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="network_settings">Network Settings</string>
+    <string name="select_protocol">Select Protocol</string>
+    <string name="save_settings">Save Settings</string>
+    <string name="customize_settings">Customize Settings</string>
+    <string name="url">URL</string>
+    <string name="mac_address">MAC Address</string>
+    <string name="urlLink">106.51.5.55</string>
+    <string name="port">Port</string>
+    <string name="app">App</string>
+    <string name="please_select_device">Select Bluetooth Device</string>
+    <string name="scan_bluetooth_device">Scan Bluetooth Device</string>
+    <string name="select_baud_rate">Select Baud Rate</string>
+
+    <!--register_screen_details-->
+    <string name="user_name">User Name</string>
+    <string name="first_name">First Name</string>
+    <string name="guardian_first_name">Guardian First Name</string>
+    <string name="guardian_last_name">Guardian Last Name</string>
+    <string name="date_of_birth">Date of Birth *</string>
+    <string name="head_of_the_family">Head of the Family ?</string>
+    <string name="minority">Minority ?</string>
+    <string name="auth_person">Authorized Person *</string>
+    <string name="house_type">House Type</string>
+    <string name="bpl">BPL</string>
+    <string name="age">Age</string>
+    <string name="land_holding">Land Holding</string>
+    <string name="dependent">Dependents</string>
+    <string name="pan_gir_no">PAN/GIR No.</string>
+    <string name="nrega_no">NREGA No.</string>
+    <string name="contact_number">Contact No.</string>
+    <string name="upload_photo">Upload Photo</string>
+    <string name="photo_upload">Photo Upload</string>
+    <string name="draw_signature">Draw Signature Here *</string>
+    <string name="customer_signature">Customer Signature</string>
+    <string name="gender">Gender *</string>
+    <string name="education">Education</string>
+    <string name="special_category">Special Category *</string>
+    <string name="religion">Religion *</string>
+    <string name="occupation">Occupation</string>
+    <string name="city">City</string>
+    <string name="id_type">ID Type</string>
+    <string name="id_number">ID Number</string>
+    <string name="state">State</string>
+    <string name="district">District</string>
+    <string name="pincode">Pin Code</string>
+    <string name="languagey">Language</string>
+    <string name="middle_name">Middle Name</string>
+    <string name="name">Name</string>
+    <string name="guardian_name">Guardian Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="pin_code">Pin Code</string>
+    <string name="country">Country</string>
+    <string name="father_name">Father Name</string>
+    <string name="customer_address">Present Address</string>
+    <string name="address2">Permanent Address</string>
+    <string name="address">Address</string>
+    <string name="identity">Identity Details</string>
+    <string name="issuing_authority">Issuing Authority</string>
+    <string name="ssp_no">SSP No.</string>
+    <string name="issue_place">Issue Place</string>
+    <string name="issue_date">Issue Date</string>
+    <string name="date_format">DD/MMM/YYYY</string>
+    <string name="mother_name">Mother Name</string>
+    <string name="pass_word">Password</string>
+    <string name="conf_pass">Confirm Password</string>
+    <string name="confirm">Confirm</string>
+    <string name="reset_pass">Reset Password</string>
+    <string name="branch_id">Branch ID</string>
+    <string name="branch_name">Branch Name</string>
+    <string name="branch_code">Branch Code</string>
+    <string name="title">Title</string>
+    <string name="relation">Relation</string>
+    <string name="community">Community</string>
+    <string name="employee_id">Employee ID</string>
+    <string name="mobile_no">Mobile No</string>
+    <string name="pan_no">PAN No</string>
+    <string name="email_id">Email ID</string>
+    <string name="created_by">Created By</string>
+    <string name="created_date">Created Date</string>
+    <string name="updated_by">Updated By</string>
+    <string name="updated_date">Updated Date</string>
+    <string name="expiry_date">Expiry Date</string>
+    <string name="no_of_installments">No. of Installments :</string>
+    <string name="outstand_balance">Outstand Balance</string>
+    <string name="reserve1">Interest Rate</string>
+    <string name="reserve2">Drawing Power</string>
+    <string name="reserve3">Undebited Amount</string>
+    <string name="installment_start_dt">Installment Start Date</string>
+    <string name="overdue">Overdue</string>
+    <string name="account_status">Account Status</string>
+    <string name="account_type">Account Type</string>
+    <string name="pending_installments">Pending Installments</string>
+    <string name="amount_of_txns">Amt of Transactions</string>
+    <string name="balance">Balance</string>
+    <string name="balance_enquiry">Balance Enquiry</string>
+    <string name="no_of_txns">No. of Transactions</string>
+    <string name="home">Home</string>
+    <string name="accounts">Accounts</string>
+    <string name="transaction">Transaction</string>
+    <string name="direct_deposits">Direct Deposits</string>
+    <string name="aadhaar_transactions">Aadhaar Transactions</string>
+    <string name="transaction_cancellation">Transaction Cancellation</string>
+    <string name="service">Services</string>
+    <string name="aadhaar_seeding">Aadhaar Seeding</string>
+    <string name="aadhaar_seeding_preview">Aadhaar Seeding Preview</string>
+    <string name="emi_calculator">EMI Calculator</string>
+    <string name="customer_loan_history">Loan History</string>
+    <string name="reports">Reports</string>
+    <string name="txn_summary">Transaction Summary</string>
+    <string name="daily_txn_details">Daily Transaction Details</string>
+    <string name="add_new_user">Add New User ?</string>
+    <string name="staff">Staff</string>
+    <string name="staff_update">Staff Update</string>
+    <string name="new_customer">New Customer</string>
+    <string name="customer_enrollment">Customer Enrollment</string>
+    <string name="other_details">Other Details</string>
+    <string name="personal_details">Personal Details</string>
+    <string name="contact_details">Contact Details</string>
+    <string name="nominee_details">Nominee Details</string>
+    <string name="nominee_guardian_details">Nominee Guardian Details</string>
+    <string name="guardian_details">Guardian Details</string>
+    <string name="bc_enrollment">BC Enrollment</string>
+    <string name="logout">Logout</string>
+    <string name="communicate">Communicate</string>
+    <string name="share">Share</string>
+    <string name="send">Send</string>
+    <string name="app_info">App Info</string>
+
+    <string name="agent">Agent</string>
+    <string name="agent_id">Agent ID</string>
+    <string name="agents">Agents</string>
+    <string name="customer">Customer</string>
+    <string name="mobile_seeding">Mobile Seeding</string>
+    <string name="mobile_seeding_preview">Mobile Seeding Preview</string>
+
+    <string name="pan_seeding">PAN Seeding</string>
+    <string name="pan_update">PAN Update</string>
+    <string name="pan_update_preview">PAN Update Preview</string>
+    <string name="pan_seeding_preview">PAN Seeding Preview</string>
+
+    <string name="loan">Loan</string>
+    <string name="loan_preview">Loan Preview</string>
+    <string name="loaning">Loaning</string>
+    <string name="saving">Saving</string>
+    <string name="saving_preview">Saving Preview</string>
+    <string name="search">Search</string>
+    <string name="print_preview">Print Preview</string>
+
+    <string name="date_time">Date &amp; Time</string>
+    <string name="account_no">Account No.</string>
+    <string name="card_no">Card No.</string>
+    <string name="account_name">Account Name</string>
+    <string name="agent_id_name">Agent ID/Name</string>
+    <string name="branch_id_name">Branch ID/Name</string>
+    <string name="product_name">Product Name</string>
+    <string name="bank_name">Bank Name</string>
+    <string name="beneficiary_bank_name">Beneficiary Bank</string>
+    <string name="beneficiary_details">Beneficiary Details:</string>
+    <string name="spouse_details">Spouse Details:</string>
+    <string name="customer_details">Customer Details:</string>
+    <string name="amount">Avl Amount</string>
+    <string name="avl_amount">Amount</string>
+    <string name="ledg_balance">Ledg Balance</string>
+    <string name="sanctioned_amount">Sanctioned Amount</string>
+    <string name="installment_amount">Installment Amount</string>
+    <string name="sanctioned_date">Sanctioned Date</string>
+    <string name="enter_amount">Enter Amount</string>
+    <string name="marital_status">Marital Status *</string>
+    <string name="enter_aadhaar_no">Enter Aadhaar No.</string>
+    <string name="enter_benef_aadhaar_no">Enter Beneficiary Aadhaar No.</string>
+    <string name="confirm_benef_aadhaar_no">Confirm Beneficiary Aadhaar No.</string>
+    <string name="enter_mobile_no">Enter Mobile No.</string>
+    <string name="enter_pan_no">Enter PAN No.</string>
+    <string name="aadhaar_no">Aadhaar No.</string>
+    <string name="benef_aadhaar_no">Beneficiary\nAadhaar No.</string>
+    <string name="benef_aadhaar_no_mdpi">Beneficiary Aadhaar No.</string>
+    <string name="aadhaar_no_hint">322847907255</string>
+    <string name="enter_amount_colon">Enter Amount</string>
+    <string name="enter_aadhaar_colon">Enter Aadhaar No</string>
+    <string name="ref_no">Ref No.</string>
+    <string name="agent_name">Agent Name</string>
+    <string name="account_holder_name">Account Holder Name</string>
+    <string name="Rs">\u20B9</string>
+    <string name="rs">\u20A8</string>
+
+    <string name="error">Error !</string>
+    <string name="response">Response</string>
+    <string name="empty_response_received">Empty Response Received !</string>
+    <!--copied string resources from leopard-->
+    <string name="language">en</string>
+
+    <string name="actMain_name">Leopard Demo App</string>
+    <string name="actMain_link_device_info_title">Selected Device :</string>
+    <string name="actMain_link_device_service_uuid">Service\'s UUID：</string>
+    <string name="actMain_find_service_uuids">Searching services list&#8230;</string>
+    <string name="actMain_not_find_service_uuids">Not find services list.</string>
+    <string name="actMain_device_info">%1$s</string>
+    <string name="actMain_btn_pair">Pair</string>
+    <string name="actMain_btn_comm">Connect</string>
+    <string name="actMain_tv_hint_service_uuid_not_bond">Please create pair.</string>
+    <string name="actMain_tv_select_mode">Select communication mode</string>
+    <string name="actMain_msg_does_not_support_uuid_service">Android version does not support this.</string>
+    <string name="actMain_msg_bluetooth_Bonding">pairing&#8230;</string>
+    <string name="actMain_msg_device_connecting">Connecting device&#8230;</string>
+    <string name="actMain_msg_device_connect_fail">Communication failure</string>
+    <string name="actMain_msg_device_connect_succes">Successful connection</string>
+    <string name="actMain_msg_bluetooth_Bond_Success">Pairing successful</string>
+    <string name="actMain_msg_bluetooth_Bond_fail">Pairing failed</string>
+    <string name="actMain_msg_pair_pwd_error">The pairing password must be 4 digits</string>
+    <string name="actMain_menu_rescan">Rescan</string>
+    <string name="actDiscovery_name">FacTP Demo app</string>
+    <string name="actDiscovery_msg_select_device">Select the device you need to connect</string>
+    <string name="actDiscovery_msg_not_find_device">Devices not found</string>
+    <string name="actDiscovery_msg_scaning_device">Scanning for Bluetooth Devices, Please wait&#8230;</string>
+    <string name="actDiscovery_msg_starting_device">Starting Bluetooth &#8230;</string>
+    <string name="bt_starting_make_it_on">Starting Bluetooth,\nPlease make sure that leopard device is turned on &#8230;</string>
+    <string name="actDiscovery_msg_start_bluetooth_fail">Bluetooth device start fail</string>
+    <string name="actDiscovery_msg_bluetooth_not_start">Bluetooth is not enabled</string>
+    <string name="actDiscovery_menu_scan">Scan</string>
+    <string name="actDiscovery_bond_bonded">Bonded</string>
+    <string name="actDiscovery_bond_nothing">Nothing</string>
+
+    <string name="actByteStream_name">Byte stream mode</string>
+    <string name="actByteStream_input_hint">input the send commands</string>
+    <string name="actByteStream_btn_send_desc">Send button</string>
+    <string name="actByteStream_tv_receive_text">Data receive</string>
+
+    <string name="actCmdLine_name">CMD line mode</string>
+    <string name="actCmdLine_input_hint">input char (press [Enter] key)</string>
+    <string name="actCmdLine_msg_helper">Current end flag: %1$s,Click [send] button finished sending, at the soft keyboard;\n\n</string>
+    <string name="actCmdLine_dialog_title_end_flg">Set command end flag</string>
+    <string name="actCmdLine_et_hint_end_flg_val">Command end flag(HEX format)</string>
+
+    <string name="actKeyBoard_name">Keyboard mode</string>
+    <string name="actKeyBoard_tv_Init">Set the buttons properties, click [Set end flag]. \n</string>
+    <string name="actKeyBoard_tv_set_btnname">BTN Name</string>
+    <string name="actKeyBoard_tv_set_btnname_hint">button display name</string>
+    <string name="actKeyBoard_tv_long_pass_freq_hint">Unit ms，must be >%1$d</string>
+    <string name="actKeyBoard_set_btn_down_send_value">BTN Down </string>
+    <string name="actKeyBoard_set_btn_hold_send_value">BTN Hold</string>
+    <string name="actKeyBoard_set_btn_up_send_value">BTN Up</string>
+    <string name="actKeyBoard_set_send_value_hint">Input send value</string>
+    <string name="actKeyBoard_tv_set_keyboard_helper">Now is the keyboard setting mode, Click the button area that setting.\n Click [Buttons set complete]back to send mode.\n</string>
+    <string name="actKeyBoard_msg_helper_endflg">Command line last chars is: %1$s;\n</string>
+    <string name="actKeyBoard_msg_repeat_freq_set">Long-press the trigger frequency: %1$dms;</string>
+
+    <string name="actAbout_name">About me</string>
+
+    <string name="dialog_title_sys_err">System Error</string>
+    <string name="dialog_title_alert">Alert</string>
+    <string name="dialog_title_io_mode_set">IO mode selection</string>
+    <string name="dialog_title_end_flg">Set end flag</string>
+    <string name="dialog_title_keyboard_set">Button Function setting</string>
+    <string name="dialog_title_keyboard_long_pass_frea">Long-press repeatedly freq(ms)</string>
+    <string name="dialog_io_mode_input_set">Input type</string>
+    <string name="dialog_io_mode_output_set">Output type</string>
+    <string name="dialog_io_mode_ascii">ASCII</string>
+    <string name="dialog_io_mode_hex">Hex(00-FF)</string>
+    <string name="dialog_end_flg_select">Select end flag template:</string>
+    <string name="dialog_end_flg_rn">Char(\'\\r\\n\')</string>
+    <string name="dialog_end_flg_n">Char(\'\\n\')</string>
+    <string name="dialog_end_flg_other">Other</string>
+    <string name="dialog_end_flg_hex_val">HEX value of the end flag:</string>
+
+    <string name="btn_ok">OK</string>
+    <string name="btn_click_me">ClickMe</string>
+    <string name="tv_send_area_title">Sent data area</string>
+    <string name="tv_receive_area_title">Received data area</string>
+    <string name="menu_close">Close</string>
+    <string name="menu_clear">Clear</string>
+    <string name="menu_io_mode">Set IO mode</string>
+    <string name="menu_save_to_file">Save2File</string>
+    <string name="menu_clear_cmd_history">Clear History</string>
+    <string name="menu_set_stop_flg">Set end flag</string>
+    <string name="menu_helper">Helper</string>
+    <string name="menu_set_key_board_start">Buttons set</string>
+    <string name="menu_set_key_board_end">Buttons set complete</string>
+    <string name="menu_set_key_board_event">Set trigger mode</string>
+    <string name="menu_set_button_long_pass_freq">Set Long-press freq</string>
+    <string name="menu_about">About</string>
+
+    <string name="device_type_bredr">BR/EDR Bluetooth</string>
+    <string name="device_type_ble">Low Energy Bluetooth</string>
+    <string name="device_type_dumo">Duplex mode Bluetooth</string>
+
+    <string name="templet_txd">Txd: %1$dB</string>
+    <string name="templet_rxd">Rxd: %1$dB</string>
+    <string name="templet_hold_time">Running: %1$ds</string>
+
+    <string name="msg_send_data_fail">Failed to send data</string>
+    <string name="msg_not_hex_string">Invalid HEX string</string>
+    <string name="msg_save_file_fail">Failed to save the file</string>
+    <string name="msg_receive_data_wating">Waiting to receive&#8230;\n</string>
+    <string name="msg_receive_data_stop">Receiver terminated</string>
+    <string name="msg_msg_bt_connect_lost">Bluetooth device communications connection is lost, try to reconnect</string>
+    <string name="msg_helper_endflg_nothing">End flag is not set. Click [Set end flag] set;\n</string>
+
+    <string name="tips_click_to_hide">Click hidden</string>
+    <string name="tips_click_to_show">Click show</string>
+    <string name="printer">Printer</string>
+    <string name="fps">Fps</string>
+    <string name="Magneticcard">Mag Card</string>
+    <string name="smartcard">Smart Card</string>
+    <string name="serial">Serial Port</string>
+    <string name="Connect">Connect</string>
+    <string name="testprint">Test Print</string>
+    <string name="logoprint">Evolute Logo</string>
+    <string name="customtext">Custom Text</string>
+    <string name="diagnostics">Diagnostics</string>
+    <string name="unicode">UniCode</string>
+    <string name="paperfeed">Paperfeed</string>
+    <string name="bitmap">Bitmap Print</string>
+    <string name="Grayscale">Grayscale Print</string>
+    <string name="barcode">Barcode Print</string>
+    <string name="QRcode">QRcode Print</string>
+    <string name="lineprint">Line Print</string>
+    <string name="capturefinger">Capture Finger</string>
+    <string name="verify">Verify finger</string>
+    <string name="imagecompressed">Image Compressed</string>
+    <string name="verifycompresees">Verify Compressed</string>
+    <string name="ImageUncompressed">Image Uncompressed</string>
+    <string name="verifyUncompressed">Verify Uncompressed</string>
+    <string name="verifymany">Verify Many</string>
+    <string name="verifymatch">Verify Match</string>
+    <string name="readmagcard">Read MagCard</string>
+    <string name="display1">Display Track1</string>
+    <string name="display2">Dispaly Track2</string>
+    <string name="powerup">Power Up</string>
+    <string name="powerdown">Power Down</string>
+    <string name="cardstatus">Card Status</string>
+    <string name="powedown">Power Down</string>
+    <string name="sendapdu">Send APDU</string>
+    <string name="readbinary">Read Binary</string>
+    <string name="ScanBarcode">Scan Barcode</string>
+    <string name="senddata">Send Data</string>
+    <string name="Returncode">ReturnCode</string>
+    <string name="not_connected">You are not connected to a device</string>
+    <string name="bt_not_enabled_leaving">Bluetooth was not enabled. Exiting Application.</string>
+    <string name="title_connecting">connecting…</string>
+    <string name="title_not_connected">not connected</string>
+    <string name="appinfo">Version: 1.12</string>
+    <!-- DeviceListActivity -->
+    <string name="scanning">Scanning for devices…</string>
+    <string name="select_device">Select a device to connect</string>
+    <string name="none_paired">No devices have been paired</string>
+    <string name="none_found">No devices found</string>
+    <string name="title_paired_devices">Paired Devices</string>
+    <string name="title_other_devices">Other Available Devices</string>
+    <string name="button_scan">Scan for devices</string>
+    <string name="note">Note </string>
+    <!-- Options Menu -->
+    <string name="menu_quit">Quit</string>
+    <string name="about">Prowess Demo App Uses Prowess SDK, it used to communicate to Leopard which having peripherals like</string>
+    <string name="information">This application has been designed to work with Evolute Systems Leopard device.\nLeopard Prowess SDK is available from Evolute Systems as per request.</string>
+
+    <string name="info">Information</string>
+    <string name="protocol">General Protocol</string>
+    <string name="escprotocol">Esc Sequence Protocol</string>
+    <string name="radio_9600">9600</string>
+    <string name="radio_11520">115200</string>
+    <string name="ibc">IBC</string>
+    <string name="btn_display">Display</string>
+    <string name="title_activity_menu_board">HomeActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="scan">Scan</string>
+    <string name="next">Next</string>
+    <string name="exit">Exit</string>
+    <string name="skip">Skip</string>
+    <string name="err_proto_creation_failed">Error: Protobuffer Package Creation Failed</string>
+    <string name="err_proto_empty_response">Empty Response Received</string>
+    <string name="err_proto_header_mismatch">Error: Header Mismatch in Response</string>
+    <string name="err_proto_incorrect_identifier">Error: Incorrect Identifier in Response</string>
+    <string name="err_proto_incorrect_message_type">Error: Incorrect Message Type in Response</string>
+    <string name="err_proto_partial_response">Error: Partial Response Received</string>
+    <string name="err_proto_parse_failed">Error: Partial Protobuffer Parse Failed</string>
+    <string name="err_proto_version_mismatch">Error: Protobuffer Version Mismatch</string>
+    <string name="err_database_copy_failed">Error copying database</string>
+
+    <string name="branch">Branch</string>
+    <string name="date">Date</string>
+    <string name="colon">:</string>
+    <string name="ac">A/C</string>
+    <string name="start">Start</string>
+
+    <!--calculator string resources-->
+    <string name="loan_amount">Loan Amount</string>
+    <string name="loan_tenure">Loan Tenure (in Months)</string>
+    <string name="interest_rate">Interest Rate (Reducing)</string>
+    <string name="calculated_monthly_emi">Calculated Monthly EMI</string>
+    <string name="total_amount_with_interest">Total Amount with Interest</string>
+    <string name="flat_interest_rate_anum">Flat Interest Rate PA</string>
+    <string name="flat_interest_rate_month">Flat Interest Rate PM</string>
+    <string name="total_interest_amount">Total Interest Amount</string>
+    <string name="yearly_interest_amount">Yearly Interest Amount</string>
+    <string name="account_details_not_found">"Account Details Not Found !"</string>
+    <string name="your_loan_details_is_cleared">"Your loan amount is cleared"</string>
+    <string name="amount_confirmation">Amount confirmation</string>
+    <string name="select_smart_card">Select Smart Card</string>
+    <string name="smart_card">Smart Card</string>
+    <string name="smart_card_txns">Smart Card Transactions</string>
+    <string name="bc_update">BC Update</string>
+    <string name="password_verify">Password Verify</string>
+    <string name="server_response">Server response</string>
+    <string name="bluetooth">Bluetooth</string>
+    <string name="capture_finger">Capture Finger</string>
+    <string name="downloading_file">File Downloading</string>
+    <string name="slash">/</string>
+    <string name="no_reports_found">No Reports Found !</string>
+    <string name="daily_txn_details_not_found">Daily Transaction Details Not Found !</string>
+    <string name="txn_summary_not_found">Transaction Summary Not Found !</string>
+    <string name="detailed_txn_reports">Detailed Transaction Reports</string>
+    <string name="failed_txns">Failed Transactions</string>
+    <string name="from_date">From Date</string>
+    <string name="to_date">To Date</string>
+    <string name="select_date">Select Date</string>
+    <string name="place_your_finger">"Place your finger on Biometric,\nWait a moment…"</string>
+    <string name="verify_figure">Verify Fingerprint</string>
+    <string name="account_freezed">Account Freezed</string>
+    <string name="account_closed">Account Closed</string>
+    <string name="version_upgrade">Version Upgrade</string>
+    <string name="sync">Sync</string>
+    <string name="ind">IND</string>
+    <string name="introduced_by">Introduced By</string>
+    <string name="introducer">Introducer</string>
+
+    <string name="deposit">Deposit</string>
+    <string name="withdrawal">Withdrawal</string>
+    <string name="fund_transfer">Fund Transfer</string>
+    <string name="mini_statement">Mini Statement</string>
+    <string name="port_no">80</string>
+    <string name="port_app_name">vcblappprod</string>
+
+    <string name="rupay_card">Rupay Transactions</string>
+    <string name="primary_smart_card">Primary Smart Card</string>
+    <string name="secondary_smart_card">Secondary Smart Card</string>
+
+    <string name="advanced_balance">Advanced Balance</string>
+    <string name="select_file">Select File</string>
+    <string name="nill_symbol">--</string>
+    <string name="magnet_card">Magnet Card</string>
+    <string name="display_track1_data">Display Track1 Data</string>
+    <string name="display_track2_data">Display Track2 Data</string>
+    <string name="display_track3_data">Display Track3 Data</string>
+    <string name="track1_data_not_available">Track1 data not available</string>
+    <string name="track2_data_not_available">Track2 data not available</string>
+    <string name="track3_data_not_available">Track3 data not available</string>
+    <string name="account_holder">Account Holder</string>
+    <string name="serial_no">Serial No.</string>
+    <string name="login_type">Login Type</string>
+    <string name="loan_saving">Loan Saving</string>
+    <string name="main_branch">Main Branch</string>
+</resources>
